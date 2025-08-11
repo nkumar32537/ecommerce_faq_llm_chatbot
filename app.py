@@ -33,7 +33,7 @@ Ask anything about **orders**, **shipping**, **returns**, **payments**, and more
 Use **voice** or **text** below.
 """)
     with gr.Row():
-        audio_in = gr.Audio(source="microphone", type="filepath", label="🎤 Ask by voice")
+        audio_in = gr.Audio(type="filepath", label="🎤 Ask by voice")
         text_in = gr.Textbox(label="⌨️ Or type your question", placeholder="e.g., How do I track my order?")
     submit_btn = gr.Button("Ask")
     output = gr.Markdown()
