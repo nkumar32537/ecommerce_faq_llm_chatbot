@@ -36,6 +36,19 @@ ecommerce_faq_chatbot/
    ```bash
    sudo apt-get update && sudo apt-get install -y ffmpeg
    ```
+
+   On Window:
+ 
+   Download FFmpeg from the official site:
+   https://ffmpeg.org/download.html → Windows builds by gyan.dev
+
+   Extract the ZIP to a folder (e.g., C:\ffmpeg).
+   Add the bin folder to your PATH (Environment Variables).
+
+Under System variables → select Path → Edit → New → add:
+
+C:\ffmpeg\bin
+
 4. **Run the app**:
    ```bash
    python app.py
@@ -43,8 +56,9 @@ ecommerce_faq_chatbot/
 5. Open the local URL shown by Gradio.
 
 ## Notes
-- You can swap the fallback model in `config.py` (e.g., upgrade to a larger chat model).
-- If ASR model download fails or you don't have ffmpeg, voice input will be disabled and text input will continue to work.
+- We need to install ffmpeg to make voice or audio-based functionality work. In my case, it is C:\ffmpeg-7.1.1-essentials_build
+- We can swap the fallback model in `config.py` (e.g., upgrade to a larger chat model).
+- If ASR model download fails or we don't have ffmpeg, voice input will be disabled and text input will continue to work.
 - The similarity threshold is configurable in `config.py`.
 
 ## Dataset
