@@ -1,5 +1,11 @@
 # E-commerce FAQ Chatbot (RAG + LLM Fallback)
 
+## Nishant Kumar
+### University of the Cumberlands
+### MSAI-631- B01 Artificial Intelligence for Human-Computer Interaction 
+
+
+## Overview
 A lightweight Python project that answers e-commerce FAQs with a retrieval-first approach
 (FAISS + MiniLM embeddings) and falls back to a small chat-tuned LLM when retrieval
 confidence is low. Includes optional voice input via Whisper ASR.
@@ -28,16 +34,18 @@ ecommerce_faq_chatbot/
    ```bash
    pip install -r requirements.txt
    ```
-3. **(Voice input) Install ffmpeg** on your system (required by Whisper). On macOS:
+3. **(Voice input) Install ffmpeg** on your system (required by Whisper). 
+   
+   a) On macOS:
    ```bash
    brew install ffmpeg
    ```
-   On Ubuntu/Debian:
+   b) On Ubuntu/Debian:
    ```bash
    sudo apt-get update && sudo apt-get install -y ffmpeg
    ```
 
-   On Window:
+   c)On Window:
  
    Download FFmpeg from the official site:
    https://ffmpeg.org/download.html → Windows builds by gyan.dev
@@ -45,9 +53,9 @@ ecommerce_faq_chatbot/
    Extract the ZIP to a folder (e.g., C:\ffmpeg).
    Add the bin folder to your PATH (Environment Variables).
 
-Under System variables → select Path → Edit → New → add:
+   Under System variables → select Path → Edit → New → add:
 
-C:\ffmpeg\bin
+   C:\ffmpeg\bin
 
 4. **Run the app**:
    ```bash
